@@ -2,6 +2,7 @@ version: "3"
 
 services:
   web:
+    container_name: web
     build: .
     ports:
       - "8080:8080"
@@ -9,7 +10,8 @@ services:
       - .env
 
   mongodb:
-    image: bitnami/mongodb:latest
+    container_name: mongodb
+    image: mongo:5
     ports:
       - "27017"
     volumes:
