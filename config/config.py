@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     algorithm: str = "HS256"
 
     class Config:
-        env_file = ".env.dev"
+        env_file = ".env"
         orm_mode = True
 
 
